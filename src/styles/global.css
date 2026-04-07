@@ -1,0 +1,29 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  max-width: var(--container-width);
+  margin: var(--container-margin);
+}
+
+.loader {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}
+
+.margin-bot {
+  margin-bottom: 15px;
+}
+
+/* Переменные */
+:root {
+  --container-width: 1316px;
+  --container-margin: 0 auto;
+}

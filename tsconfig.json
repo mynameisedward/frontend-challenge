@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@styles/*": ["./src/styles"],
+      "@widgets/*": ["./src/widgets/*"],
+      "@features/*": ["./src/features/*"]
+    },
+    "rootDirs": ["src"]
+  }
+}

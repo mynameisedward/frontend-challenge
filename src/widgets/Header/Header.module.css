@@ -1,0 +1,83 @@
+/* Header.module.css */
+
+.header {
+  min-height: 64px;
+  background-color: #2196f3;
+  display: flex; /* Важное дополнение: делаем flex-контейнер */
+  align-items: center; /* Центрируем вертикально */
+  margin-bottom: 52px;
+}
+
+.container {
+  max-width: var(--container-width, 1200px); /* Задали дефолтное значение */
+  margin: var(--container-margin, 0 auto); /* Дефолтное центрование */
+  display: flex;
+  align-items: center;
+  width: 100%; /* Контейнер занимает всю ширину родителя */
+  height: 100%; /* Контейнер занимает всю высоту родителя */
+}
+
+.navbar {
+  display: flex;
+  align-items: stretch; /* Растягиваем пункты на всю высоту */
+  height: 100%; /* Высота равна высоте шапки */
+  width: 100%; /* Навбар занимает всю ширину контейнера */
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  height: 100%; /* Меню занимает всю высоту */
+}
+
+.menu li {
+  display: flex; /* Чтобы дочерние элементы растягивались */
+  align-items: center; /* Центрирование вертикальное */
+  height: 100%;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem; /* Внутренние отступы */
+  transition: background-color 0.3s;
+  height: 64px; /* Пункты занимают всю высоту */
+  display: block; /* Чтобы высота работала */
+  margin: auto 0;
+  align-self: center;
+  padding: 20px;
+}
+
+.menu a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* Header.module.css */
+
+/* Ваш остальной CSS остается прежним */
+
+/* Новый класс .link для обычных ссылок */
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: background-color 0.3s;
+  height: 64px;
+  display: block;
+  margin: auto 0;
+  align-self: center;
+  padding: 20px;
+}
+
+/* Активный класс */
+.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Ховер-стиль */
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

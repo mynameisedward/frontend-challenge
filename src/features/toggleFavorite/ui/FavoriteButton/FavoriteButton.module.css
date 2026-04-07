@@ -1,0 +1,45 @@
+/* FavoriteButton.module.css */
+
+.favoriteBtn {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+
+  width: 40px;
+  height: 36.7px;
+
+  cursor: pointer;
+
+  /* Скрываем картинку по умолчанию */
+  & img {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+/* Активное состояние */
+.favoriteBtn.active img,
+.favoriteBtn:hover img {
+  opacity: 0; /* скрываем обычную иконку */
+}
+
+/* Показываем активную иконку при активности или наведении */
+.favoriteBtn.active::before,
+.favoriteBtn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("@shared/assets/active-like.png"); /* активная иконка */
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* поверх обычной иконки */
+}
+
+/* Обычная иконка */
+.likeImg {
+  width: 40px;
+  height: 36.7px;
+}
